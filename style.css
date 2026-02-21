@@ -61,3 +61,70 @@ footer {
 .linktr-button:hover {
   transform: translateY(-2px);
 }
+
+#view {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#c {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#panel {
+  position: fixed;
+  right: 10px;
+  top: 80px;
+  background: rgba(0, 0, 0, 0.85);
+  padding: 15px;
+  border-radius: 8px;
+  max-width: 300px;
+  font-family: monospace;
+  font-size: 12px;
+  z-index: 1000;
+  border: 1px solid #555;
+}
+
+#panel label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#panel select,
+#panel input {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  background: #222;
+  border: 1px solid #555;
+  color: #fff;
+  border-radius: 4px;
+}
+
+#panel input[type="color"] {
+  width: 50px;
+  cursor: pointer;
+}
+
+#panel input[type="range"] {
+  width: 100%;
+}
+
+.mono {
+  font-weight: bold;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #555;
+}
+
+#errors {
+  color: #ff6b6b;
+  word-wrap: break-word;
+  margin-top: 10px;
+  white-space: pre-wrap;
+}
